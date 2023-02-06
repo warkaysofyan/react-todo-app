@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+body{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);width:100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+    background-color: white;
+    min-height:10rem;
+    width:550px;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    row-gap: 30px;
+    position: relative;
+    top:10rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.b{
+    height:50px;
+    width:75px;
+    background-color: aqua;
+    border-radius: 7px;
+    border:none;
 }
+.a{
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    height:50px;
+    width:100%;
+    background-color: aqua;
+    border-radius: 7px;
+    border:none;
+    font-size: 1.5rem;
 }
-
-.App-link {
-  color: #61dafb;
+#c{
+    height:40px;
+    width:40px;
+    background-color: aqua;
+    border:none;
+    align-self: center;
+    background-color: red;
+    font-size: 1rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list{
+    background-color: #eee;
+    width:100%;
+    list-style:none;
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    padding:10px;
+    border-radius: 10px;
+}
+.containerA{
+    height:50px;
+    display:flex;
+    align-items: center;
+    column-gap: 10px;
+    width:100%;
+}
+.list>li{
+    height: 50px;
+    background-color: white;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+    cursor:pointer;
+}
+.list>li>div{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+}
+.list>li>div>p{
+    color:red;
+    font-size:1.5rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.list>li>div>.check{
+    color:green;
+    text-decoration: line-through;
+    font-style: italic;
+}
+.ic{
+    color:green;
+    font-size: 2rem;
+    margin:5px;
+    margin-right: 10px;
+}
+.checked{
+    color:red;
+}
+.list>li>button{
+    background-color: transparent;
+    border:none;
+    font-size: 1.5rem;
+}
+.btns{
+    height:40px;
+    width:100%;
+    background-color: rgba(220, 227, 210, 0.686);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 10px;
+}
+.btns input{
+    background-color: transparent;
+    border:none;
+    color:rgb(110, 109, 109);
+}
+.btns * {
+    cursor:pointer;
+}
+.btns>.left{
+    display:flex;
+    column-gap: 10px;
+    align-items: center;
+    color:rgb(110, 109, 109);
+}
+.btns>.filters{
+    display:flex;
+    column-gap: 15px;
+    align-items: center;
 }

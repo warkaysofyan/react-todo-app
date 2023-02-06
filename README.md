@@ -16,4 +16,4 @@ You may also see any lint errors in the console.
 
 ### `show live `
 
-[http://react-todo.warkay.tk] (http://react-todo.warkay.tk)
+[go live](http://react-todo.warkay.tk)
